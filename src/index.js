@@ -39,3 +39,25 @@ pieChart.setOption({
     ]
   }]
 });
+
+setTimeout(() => {
+  pieChart.setOption({
+    title: {
+      text: '南丁格尔图'
+    },
+    roseType: 'angle',
+    itemStyle: {
+      emphasis: {
+        // 阴影的大小
+        shadowBlur: 200,
+        // 阴影水平方向上的偏移
+        shadowOffsetX: 0,
+        // 阴影垂直方向上的偏移
+        shadowOffsetY: 0,
+        // 阴影颜色
+        shadowColor: 'rgba(0, 0, 0, 0.5)'
+      }
+    }
+  })
+}, 5000);
+
